@@ -38,35 +38,43 @@ nav {
 .right {
   background: red;
 }
-.box{
+
+.box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height:200px;
+  height: 200px;
   grid-column-gap: 15px;
   margin-top: 15px;
 }
-.box1{
+
+.box1 {
   background-color: aqua;
 }
-.box2{
+
+.box2 {
   background-color: rebeccapurple;
 }
-.box3{
+
+.box3 {
   background-color: rgb(79, 179, 76);
 }
-.box4{
+
+.box4 {
   background-color: rgb(190, 145, 21);
 }
-.box5{
+
+.box5 {
   background-color: rgb(30, 238, 93);
 }
-.box6{
+
+.box6 {
   background-color: rgb(32, 14, 192);
 }
-.bottom-box{
+
+.bottom-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height:200px;
+  height: 200px;
   grid-column-gap: 15px;
   margin-top: 15px;
 }
