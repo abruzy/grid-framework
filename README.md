@@ -6,7 +6,7 @@ This is an attempt to create our own grid-based framework as part of completing 
 - CSS
 
 ## Live Demo
-
+https://rawcdn.githack.com/abruzy/grid-framework/08bf6b66645f54d647ab75043dacd4139e968c07/index.html
 
 ## Authors
 - [Abubakar Diallo](https://github.com/abruzy)
