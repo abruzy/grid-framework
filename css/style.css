@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-body,
-html {
-  background: grey;
-}
-
 .container {
   margin: 0 auto;
   width: 100%;
@@ -107,10 +102,26 @@ nav{
   background-color: rgb(218, 215, 248);
   float: left;
   margin:2px 12px;
+  height: 100vh;
+
 }
+
+
 footer {
-  width: 100%;
-  height: 180px;
-  background: black;
-  margin-top: 15px;
+  grid-area: footer;
+  background: #588ec3;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 27% 27% 27%;
+    grid-template-rows: 8% 30% auto 10%;
+    grid-template-areas:
+      "sidebar header header header"
+      "sidebar sect1 sect2 sect3"
+      "sidebar main main main"
+      "sidebar footer footer footer";
+  }
 }
