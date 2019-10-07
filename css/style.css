@@ -22,6 +22,10 @@ div[class^="col-"] {
   padding: 1rem 0;
 }
 
+h1 {
+  text-align: center;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
