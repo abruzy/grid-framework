@@ -1,0 +1,83 @@
+// breakpoints
+$device-xs: 540px;
+$device-sm: 768px;
+$device-md: 992px;
+$device-lg: 1200px;
+
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+.row--align-v-center {
+  align-items: center;
+}
+
+.row--align-v-bottom {
+  align-items: flex-end;
+}
+
+.row--align-h-center {
+  justify-content: center;
+}
+
+.row--align-h-right {
+  justify-content: flex-end;
+}
+
+.row--reverse {
+  flex-direction: row-reverse;
+}
+
+@media (min-width: $device-xs) {
+  max-width: $device-xs;
+}
+
+@media (min-width: $device-sm) {
+  max-width: $device-sm;
+}
+
+@media (min-width: $device-md) {
+  max-width: $device-md;
+}
+
+@media (min-width: $device-lg) {
+  max-width: $device-lg;
+}
+
+@for $i from 1 through 12 {
+  .col-xs-#{$i},
+  .col-sm-#{$i},
+  .col-md-#{$i},
+  .col-lg-#{$i} {
+    box-sizing: border-box;
+    padding: 1em;
+    width: 100%;
+  }
+
+  .col-xs-#{$i} {
+    @media (min-width: $device-xs) {
+      width: calc(100% * (#{$i} / 12));
+    }
+  }
+
+  .col-sm-#{$i} {
+    @media (min-width: $device-sm) {
+      width: calc(100% * (#{$i} / 12));
+    }
+  }
+
+  .col-md-#{$i} {
+    @media (min-width: $device-md) {
+      width: calc(100% * (#{$i} / 12));
+    }
+  }
+
+  .col-lg-#{$i} {
+    @media (min-width: $device-lg) {
+      width: calc(100% * (#{$i} / 12));
+    }
+  }
+}
