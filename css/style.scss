@@ -81,3 +81,9 @@ $device-lg: 1200px;
     }
   }
 }
+
+[class^='col'] {
+  background-color: #ffd6e0;
+  border: 1px dotted #ff7093;
+  text-align: center;
+}
