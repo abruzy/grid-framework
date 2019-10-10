@@ -1,0 +1,230 @@
+.container {
+  width: 100%;
+  $column-width: 100%/12;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &.align-items-center {
+      align-items: center;
+    }
+
+    &.justify-content-center {
+      justify-content: center;
+    }
+
+    &.justify-content-space-around {
+      justify-content: space-around;
+    }
+
+    @for $value from 1 through 12 {
+      .col-#{$value} {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: $column-width * $value;
+      }
+
+      .offset-#{$value} {
+        margin-left: $column-width * $value;
+      }
+
+      .order-#{$value} {
+        order: $value;
+      }
+    }
+    @media screen and (min-width: 576px) {
+      @for $value from 1 through 12 {
+        .col-sm-#{$value} {
+          padding-left: 15px;
+          padding-right: 15px;
+          width: $column-width * $value;
+        }
+
+        .offset-sm-#{$value} {
+          margin-left: $column-width * $value;
+        }
+
+        .order-sm-#{$value} {
+          order: $value;
+        }
+      }
+    }
+    @media screen and (min-width: 768px) {
+      @for $value from 1 through 12 {
+        .col-md-#{$value} {
+          padding-left: 15px;
+          padding-right: 15px;
+          width: $column-width * $value;
+        }
+
+        .offset-md-#{$value} {
+          margin-left: $column-width * $value;
+        }
+
+        .order-md-#{$value} {
+          order: $value;
+        }
+      }
+    }
+    @media screen and (min-width: 992px) {
+      @for $value from 1 through 12 {
+        .col-lg-#{$value} {
+          padding-left: 15px;
+          padding-right: 15px;
+          width: $column-width * $value;
+        }
+
+        .offset-lg-#{$value} {
+          margin-left: $column-width * $value;
+        }
+
+        .order-lg-#{$value} {
+          order: $value;
+        }
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      @for $value from 1 through 12 {
+        .col-xl-#{$value} {
+          padding-left: 15px;
+          padding-right: 15px;
+          width: $column-width * $value;
+        }
+
+        .offset-xl-#{$value} {
+          margin-left: $column-width * $value;
+        }
+
+        .order-xl-#{$value} {
+          order: $value;
+        }
+      }
+    }
+  }
+
+  &.no_gutter {
+    .row {
+      [class*="col-"] {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.d-flex,
+.d-sm-flex,
+.d-md-flex,
+.d-lg-flex,
+.d-xl-flex {
+  flex-wrap: wrap;
+  &.justify-content-center {
+    justify-content: center;
+  }
+
+  &.justify-content-space-around {
+    justify-content: space-around;
+  }
+
+  &.justify-content-space-between {
+    justify-content: space-between;
+  }
+
+  &.align-items-center {
+    align-items: center;
+  }
+
+  &.justify-content-end {
+    justify-content: flex-end;
+  }
+
+  @media screen and (min-width: 576px) {
+    &.justify-content-sm-center {
+      justify-content: center;
+    }
+
+    &.justify-content-sm-space-around {
+      justify-content: space-around;
+    }
+
+    &.justify-content-sm-space-between {
+      justify-content: space-between;
+    }
+
+    &.align-items-sm-center {
+      align-items: center;
+    }
+
+    &.justify-content-sm-end {
+      justify-content: flex-end;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &.justify-content-md-center {
+      justify-content: center;
+    }
+
+    &.justify-content-md-space-around {
+      justify-content: space-around;
+    }
+
+    &.justify-content-md-space-between {
+      justify-content: space-between;
+    }
+
+    &.align-items-md-center {
+      align-items: center;
+    }
+
+    &.justify-content-md-end {
+      justify-content: flex-end;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    &.justify-content-lg-center {
+      justify-content: center;
+    }
+
+    &.justify-content-lg-space-around {
+      justify-content: space-around;
+    }
+
+    &.justify-content-lg-space-between {
+      justify-content: space-between;
+    }
+
+    &.align-items-lg-center {
+      align-items: center;
+    }
+
+    &.justify-content-lg-end {
+      justify-content: flex-end;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &.justify-content-xl-center {
+      justify-content: center;
+    }
+
+    &.justify-content-xl-space-around {
+      justify-content: space-around;
+    }
+
+    &.justify-content-xl-space-between {
+      justify-content: space-between;
+    }
+
+    &.align-items-xl-center {
+      align-items: center;
+    }
+
+    &.justify-content-xl-end {
+      justify-content: flex-end;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+@for $value from 1 through 7 {
+  .m-#{$value} {
+    margin: $value/4 + rem !important;
+  }
+
+  .mt-#{$value} {
+    margin-top: $value/4 + rem !important;
+  }
+
+  .mb-#{$value} {
+    margin-bottom: $value/4 + rem !important;
+  }
+
+  .ml-#{$value} {
+    margin-left: $value/4 + rem !important;
+  }
+
+  .mr-#{$value} {
+    margin-right: $value/4 + rem !important;
+  }
+
+  .p-#{$value} {
+    padding: $value/4 + rem !important;
+  }
+
+  .pt-#{$value} {
+    padding-top: $value/4 + rem !important;
+  }
+
+  .pb-#{$value} {
+    padding-bottom: $value/4 + rem !important;
+  }
+
+  .pr-#{$value} {
+    padding-right: $value/4 + rem !important;
+  }
+
+  .pl-#{$value} {
+    padding-left: $value/4 + rem !important;
+  }
+}
+$widths: 10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90, 100;
+@each $width in $widths {
+  .w-#{$width} {
+    width: percentage($width/100) !important;
+  }
+}
+
+.mx-auto {
+  margin: auto !important;
+}
+
+@for $value from 1 through 7 {
+  .b-#{$value}{
+    border:$value/7+rem solid black;
+  }
+  .bt-#{$value}{
+    border-top:$value/7+rem solid black;
+  }
+  .bb-#{$value}{
+    border-bottom:$value/7+rem solid black;
+  }
+  .br-#{$value}{
+    border-right:$value/7+rem solid black;
+  }
+  .bl-#{$value}{
+    border-left:$value/7+rem solid black;
+  }
+  .b-rounded-top-left-#{$value}{
+    border-top-left-radius:$value/7+rem;
+  }
+  .b-rounded-top-right-#{$value}{
+    border-top-right-radius:$value/7+rem;
+  }
+  .b-rounded-bottom-left-#{$value}{
+    border-bottom-left-radius:$value/7+rem;
+  }
+  .b-rounded-bottom-right-#{$value}{
+    border-bottom-right-radius:$value/7+rem;
+  }
+    
+}
+.b-circle{
+  border-radius:50%;
+}
+
+.b-color-red{
+  border-color: red;
+}
+
+.b-color-black{
+  border-color: black;
+}
+
+.b-color-white{
+  border-color:white;
+}
+.b-color-yellow{
+  border-color:yellow;
+}
+
+.b-color-gray{
+  border-color:gray;
+}
+
+.b-color-blue{
+  border-color:blue;
+}
+
+.b-color-orange{
+  border-color:orange;
+}
+
+.b-color-green{
+  border-color:green;
+}
+
+.b-color-pink{
+  border-color:pink;
+}
+
+.b-color-brown{
+  border-color:brown;
+}
+
