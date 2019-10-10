@@ -2136,6 +2136,23 @@ body main > section:nth-child(2) h2 {
   font-size: 2rem;
 }
 
+body footer > div:nth-child(1) {
+  background-image: url(../images/footer-bg.jpg);
+  height: 149px;
+}
+
+body footer > div:nth-child(2) {
+  max-width: 1020px;
+}
+
+body footer > div:nth-child(2) > div:first-child {
+  border-bottom: 1px solid #0965a1;
+}
+
+body footer > div:nth-child(2) > div:last-child {
+  font-size: 18px;
+}
+
 body main > section:nth-child(2) .col-md-4:nth-child(1) > div {
   background-image: url(../images/inner1.svg), url(../images/section2-img1.svg);
   background-repeat: no-repeat;
@@ -2268,21 +2285,4 @@ body footer {
 
 body footer > div > div ul {
   width: 200px;
-}
-
-body footer > div:nth-child(1) {
-  background-image: url(../images/footer-bg.jpg);
-  height: 149px;
-}
-
-npx stylelint css/styles.css --fi body footer > div:nth-child(2) {
-  max-width: 1020px;
-}
-
-body footer > div:nth-child(2) > div:first-child {
-  border-bottom: 1px solid #0965a1;
-}
-
-body footer > div:nth-child(2) > div:last-child {
-  font-size: 18px;
 }
