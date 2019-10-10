@@ -47,16 +47,16 @@ $device-lg: 1200px;
   max-width: $device-lg;
 }
 
-@for $i from 1 through 12 {
-  .col-xs-#{$i},
-  .col-sm-#{$i},
-  .col-md-#{$i},
-  .col-lg-#{$i} {
-    box-sizing: border-box;
-    padding: 1em;
-    width: 100%;
-  }
-}
+// @for $i from 1 through 12 {
+//   .col-xs-#{$i},
+//   .col-sm-#{$i},
+//   .col-md-#{$i},
+//   .col-lg-#{$i} {
+//     box-sizing: border-box;
+//     padding: 1em;
+//     width: 100%;
+//   }
+// }
 
 .col-xs-#{$i} {
   @media (min-width: $device-xs) {
