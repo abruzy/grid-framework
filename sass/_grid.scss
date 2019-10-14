@@ -34,6 +34,7 @@
         order: $value;
       }
     }
+
     @media screen and (min-width: 576px) {
       @for $value from 1 through 12 {
         .col-sm-#{$value} {
@@ -51,6 +52,7 @@
         }
       }
     }
+
     @media screen and (min-width: 768px) {
       @for $value from 1 through 12 {
         .col-md-#{$value} {
@@ -68,6 +70,7 @@
         }
       }
     }
+
     @media screen and (min-width: 992px) {
       @for $value from 1 through 12 {
         .col-lg-#{$value} {
@@ -85,6 +88,7 @@
         }
       }
     }
+
     @media screen and (min-width: 1200px) {
       @for $value from 1 through 12 {
         .col-xl-#{$value} {
@@ -120,6 +124,7 @@
 .d-lg-flex,
 .d-xl-flex {
   flex-wrap: wrap;
+
   &.justify-content-center {
     justify-content: center;
   }

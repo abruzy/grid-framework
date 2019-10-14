@@ -40,6 +40,7 @@
   }
 }
 $widths: 10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90, 100;
+
 @each $width in $widths {
   .w-#{$width} {
     width: percentage($width/100) !important;
@@ -51,75 +52,83 @@ $widths: 10, 20, 25, 30, 40, 50, 60, 70, 75, 80, 90, 100;
 }
 
 @for $value from 1 through 7 {
-  .b-#{$value}{
-    border:$value/7+rem solid black;
+  .b-#{$value} {
+    border: $value 7rem solid black;
   }
-  .bt-#{$value}{
-    border-top:$value/7+rem solid black;
+
+  .bt-#{$value} {
+    border-top: $value 7rem solid black;
   }
-  .bb-#{$value}{
-    border-bottom:$value/7+rem solid black;
+
+  .bb-#{$value} {
+    border-bottom: $value 7rem solid black;
   }
-  .br-#{$value}{
-    border-right:$value/7+rem solid black;
+
+  .br-#{$value} {
+    border-right: $value 7rem solid black;
   }
-  .bl-#{$value}{
-    border-left:$value/7+rem solid black;
+
+  .bl-#{$value} {
+    border-left: $value 7rem solid black;
   }
-  .b-rounded-top-left-#{$value}{
-    border-top-left-radius:$value/7+rem;
+
+  .b-rounded-top-left-#{$value} {
+    border-top-left-radius: $value 7rem;
   }
-  .b-rounded-top-right-#{$value}{
-    border-top-right-radius:$value/7+rem;
+
+  .b-rounded-top-right-#{$value} {
+    border-top-right-radius: $value 7rem;
   }
-  .b-rounded-bottom-left-#{$value}{
-    border-bottom-left-radius:$value/7+rem;
+
+  .b-rounded-bottom-left-#{$value} {
+    border-bottom-left-radius: $value 7rem;
   }
-  .b-rounded-bottom-right-#{$value}{
-    border-bottom-right-radius:$value/7+rem;
+
+  .b-rounded-bottom-right-#{$value} {
+    border-bottom-right-radius: $value 7rem;
   }
-    
-}
-.b-circle{
-  border-radius:50%;
 }
 
-.b-color-red{
+.b-circle {
+  border-radius: 50%;
+}
+
+.b-color-red {
   border-color: red;
 }
 
-.b-color-black{
+.b-color-black {
   border-color: black;
 }
 
-.b-color-white{
-  border-color:white;
-}
-.b-color-yellow{
-  border-color:yellow;
+.b-color-white {
+  border-color: white;
 }
 
-.b-color-gray{
-  border-color:gray;
+.b-color-yellow {
+  border-color: yellow;
 }
 
-.b-color-blue{
-  border-color:blue;
+.b-color-gray {
+  border-color: gray;
 }
 
-.b-color-orange{
-  border-color:orange;
+.b-color-blue {
+  border-color: blue;
 }
 
-.b-color-green{
-  border-color:green;
+.b-color-orange {
+  border-color: orange;
 }
 
-.b-color-pink{
-  border-color:pink;
+.b-color-green {
+  border-color: green;
 }
 
-.b-color-brown{
-  border-color:brown;
+.b-color-pink {
+  border-color: pink;
 }
 
+.b-color-brown {
+  border-color: brown;
+}
